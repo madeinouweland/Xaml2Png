@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Xaml2Png.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Xaml2Png"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="0" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBox x:Name="text" HorizontalAlignment="Center" TextWrapping="Wrap" Text="If you can type it, you can save it as a PNG" VerticalAlignment="Center" Width="200" Height="200" Margin="0,0,10,0"/>
+            <Button x:Name="PngButton" Content="Save as PNG and show >" Margin="0,0,10,0"></Button>
+            <Image x:Name="image" HorizontalAlignment="Center" Height="200" VerticalAlignment="Center" Width="200"/>
+        </StackPanel>
+    </Grid>
+</Page>
