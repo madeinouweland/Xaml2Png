@@ -30,7 +30,7 @@ namespace Xaml2Png {
                 var encoder = await BitmapEncoder.CreateAsync(BitmapEncoder.PngEncoderId, stream);
                 encoder.SetPixelData(
                     BitmapPixelFormat.Bgra8,
-                    BitmapAlphaMode.Ignore,
+                    BitmapAlphaMode.Straight,
                     (uint)renderTargetBitmap.PixelWidth,
                     (uint)renderTargetBitmap.PixelHeight, 96d, 96d,
                     pixelBuffer.ToArray());
